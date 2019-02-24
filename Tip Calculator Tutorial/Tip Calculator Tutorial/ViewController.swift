@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressCalculateButtonACTION(_ sender: UIButton) {
-        var cost = Double(txtCostTextOUTLET.text!)
+        let cost = Double(txtCostTextOUTLET.text!)
         calculateTotal(cost: cost!)
         displayCost()
 
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     func calculateTotal(cost : Double) {
         // convert a tip amount from a percent to a decimal point of 1
-        var tip = (tipAmount! / 100) * cost
+        let tip = (tipAmount! / 100) * cost
         totalCost = tip + cost
     }
     
