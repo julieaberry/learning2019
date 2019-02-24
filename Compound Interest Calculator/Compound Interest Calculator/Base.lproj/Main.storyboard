@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Compound_Interest_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Choose missing variable and enter known variables" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1A9-9d-Bpm">
+                                <rect key="frame" x="50" y="56" width="675" height="96"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.73351883559999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
+                                </variation>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FPf-mS-57Y">
+                                <rect key="frame" x="41" y="173" width="665" height="29"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Principal"/>
+                                    <segment title="Time"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="chooseMissingVariableSegmentACTION:" destination="BYZ-38-t0r" eventType="valueChanged" id="9C9-W6-EYz"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zd-c5-gYL">
+                                <rect key="frame" x="21" y="256" width="721" height="76"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktA-eG-upq">
+                                <rect key="frame" x="21" y="367" width="721" height="76"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pSC-tB-ex3">
+                                <rect key="frame" x="21" y="444" width="704" height="76"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l74-H1-Pqf">
+                                <rect key="frame" x="21" y="521" width="704" height="76"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Final Amount:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0t-Fn-bbZ">
+                                <rect key="frame" x="20" y="855" width="715" height="134"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-xh-qrT">
+                                <rect key="frame" x="20" y="768" width="721" height="66"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
+                                <state key="normal" title="CALCULATE">
+                                    <color key="titleColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pressCalculateButtonACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMZ-ru-D8V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ktA-eG-upq" firstAttribute="centerX" secondItem="7zd-c5-gYL" secondAttribute="centerX" id="3vj-c6-nhq"/>
+                            <constraint firstItem="FPf-mS-57Y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="57G-dG-PTT"/>
+                            <constraint firstItem="FPf-mS-57Y" firstAttribute="top" secondItem="1A9-9d-Bpm" secondAttribute="bottom" multiplier="1.1" id="6ia-YE-N43"/>
+                            <constraint firstItem="pSC-tB-ex3" firstAttribute="top" secondItem="ktA-eG-upq" secondAttribute="bottom" constant="1" id="6mW-cU-4qz"/>
+                            <constraint firstItem="FPf-mS-57Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BFI-jY-7e7"/>
+                            <constraint firstItem="xNt-xh-qrT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E32-Df-E9y"/>
+                            <constraint firstItem="7zd-c5-gYL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JZN-Fw-TrE"/>
+                            <constraint firstItem="1A9-9d-Bpm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="Jc3-FK-V95"/>
+                            <constraint firstItem="1A9-9d-Bpm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jdh-P9-Rjl"/>
+                            <constraint firstItem="W0t-Fn-bbZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lfq-kR-yyZ"/>
+                            <constraint firstItem="xNt-xh-qrT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Lla-Ld-DLV"/>
+                            <constraint firstItem="ktA-eG-upq" firstAttribute="top" secondItem="7zd-c5-gYL" secondAttribute="bottom" constant="1" id="MUW-Ub-fv5"/>
+                            <constraint firstItem="l74-H1-Pqf" firstAttribute="height" secondItem="pSC-tB-ex3" secondAttribute="height" id="NP6-MW-Q4F"/>
+                            <constraint firstItem="l74-H1-Pqf" firstAttribute="width" secondItem="pSC-tB-ex3" secondAttribute="width" id="P3I-rJ-u7c"/>
+                            <constraint firstItem="pSC-tB-ex3" firstAttribute="height" secondItem="ktA-eG-upq" secondAttribute="height" id="RfF-ny-IL5"/>
+                            <constraint firstItem="7zd-c5-gYL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="SRC-uO-MgL"/>
+                            <constraint firstItem="7zd-c5-gYL" firstAttribute="top" secondItem="FPf-mS-57Y" secondAttribute="bottom" multiplier="1.1" id="VJv-hu-AeP"/>
+                            <constraint firstItem="pSC-tB-ex3" firstAttribute="width" secondItem="ktA-eG-upq" secondAttribute="width" id="W5z-W7-HWG"/>
+                            <constraint firstItem="l74-H1-Pqf" firstAttribute="top" secondItem="pSC-tB-ex3" secondAttribute="bottom" constant="1" id="Yjf-wC-jLB"/>
+                            <constraint firstItem="1A9-9d-Bpm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="bbL-bF-Dls">
+                                <variation key="heightClass=compact-widthClass=compact" constant="12"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="12"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="W0t-Fn-bbZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="0.97" id="buQ-vm-vOx"/>
+                            <constraint firstItem="xNt-xh-qrT" firstAttribute="bottom" secondItem="W0t-Fn-bbZ" secondAttribute="top" multiplier="0.97" constant="1" id="eP0-1e-nbG"/>
+                            <constraint firstItem="pSC-tB-ex3" firstAttribute="centerX" secondItem="ktA-eG-upq" secondAttribute="centerX" id="eZA-lT-9IA"/>
+                            <constraint firstItem="W0t-Fn-bbZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="hR7-xM-iyl"/>
+                            <constraint firstItem="W0t-Fn-bbZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="pQj-Hp-DKP"/>
+                            <constraint firstItem="FPf-mS-57Y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="qqO-cR-vYN"/>
+                            <constraint firstItem="1A9-9d-Bpm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="uMK-8x-3Y3"/>
+                            <constraint firstItem="7zd-c5-gYL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.085" id="xOh-L8-bZ4"/>
+                            <constraint firstItem="ktA-eG-upq" firstAttribute="width" secondItem="7zd-c5-gYL" secondAttribute="width" id="y81-f4-oaV"/>
+                            <constraint firstItem="ktA-eG-upq" firstAttribute="height" secondItem="7zd-c5-gYL" secondAttribute="height" id="yC9-se-I7W"/>
+                            <constraint firstItem="l74-H1-Pqf" firstAttribute="centerX" secondItem="pSC-tB-ex3" secondAttribute="centerX" id="yQ9-8h-5Xt"/>
+                            <constraint firstItem="xNt-xh-qrT" firstAttribute="top" secondItem="l74-H1-Pqf" secondAttribute="bottom" multiplier="1.03" constant="1" id="zvR-b9-iV0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Jc3-FK-V95"/>
+                                <exclude reference="Jdh-P9-Rjl"/>
+                                <exclude reference="bbL-bF-Dls"/>
+                                <exclude reference="uMK-8x-3Y3"/>
+                                <exclude reference="57G-dG-PTT"/>
+                                <exclude reference="6ia-YE-N43"/>
+                                <exclude reference="BFI-jY-7e7"/>
+                                <exclude reference="qqO-cR-vYN"/>
+                                <exclude reference="JZN-Fw-TrE"/>
+                                <exclude reference="SRC-uO-MgL"/>
+                                <exclude reference="VJv-hu-AeP"/>
+                                <exclude reference="xOh-L8-bZ4"/>
+                                <exclude reference="3vj-c6-nhq"/>
+                                <exclude reference="MUW-Ub-fv5"/>
+                                <exclude reference="y81-f4-oaV"/>
+                                <exclude reference="yC9-se-I7W"/>
+                                <exclude reference="6mW-cU-4qz"/>
+                                <exclude reference="RfF-ny-IL5"/>
+                                <exclude reference="W5z-W7-HWG"/>
+                                <exclude reference="eZA-lT-9IA"/>
+                                <exclude reference="NP6-MW-Q4F"/>
+                                <exclude reference="P3I-rJ-u7c"/>
+                                <exclude reference="Yjf-wC-jLB"/>
+                                <exclude reference="yQ9-8h-5Xt"/>
+                                <exclude reference="E32-Df-E9y"/>
+                                <exclude reference="zvR-b9-iV0"/>
+                                <exclude reference="Lfq-kR-yyZ"/>
+                                <exclude reference="buQ-vm-vOx"/>
+                                <exclude reference="eP0-1e-nbG"/>
+                                <exclude reference="hR7-xM-iyl"/>
+                                <exclude reference="pQj-Hp-DKP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Jc3-FK-V95"/>
+                                <exclude reference="Jdh-P9-Rjl"/>
+                                <exclude reference="bbL-bF-Dls"/>
+                                <exclude reference="uMK-8x-3Y3"/>
+                                <exclude reference="57G-dG-PTT"/>
+                                <exclude reference="6ia-YE-N43"/>
+                                <exclude reference="BFI-jY-7e7"/>
+                                <exclude reference="qqO-cR-vYN"/>
+                                <exclude reference="JZN-Fw-TrE"/>
+                                <exclude reference="SRC-uO-MgL"/>
+                                <exclude reference="VJv-hu-AeP"/>
+                                <exclude reference="xOh-L8-bZ4"/>
+                                <exclude reference="3vj-c6-nhq"/>
+                                <exclude reference="MUW-Ub-fv5"/>
+                                <exclude reference="y81-f4-oaV"/>
+                                <exclude reference="yC9-se-I7W"/>
+                                <exclude reference="6mW-cU-4qz"/>
+                                <exclude reference="RfF-ny-IL5"/>
+                                <exclude reference="W5z-W7-HWG"/>
+                                <exclude reference="eZA-lT-9IA"/>
+                                <exclude reference="NP6-MW-Q4F"/>
+                                <exclude reference="P3I-rJ-u7c"/>
+                                <exclude reference="Yjf-wC-jLB"/>
+                                <exclude reference="yQ9-8h-5Xt"/>
+                                <exclude reference="E32-Df-E9y"/>
+                                <exclude reference="zvR-b9-iV0"/>
+                                <exclude reference="Lfq-kR-yyZ"/>
+                                <exclude reference="buQ-vm-vOx"/>
+                                <exclude reference="eP0-1e-nbG"/>
+                                <exclude reference="hR7-xM-iyl"/>
+                                <exclude reference="pQj-Hp-DKP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="Jc3-FK-V95"/>
+                                <exclude reference="Jdh-P9-Rjl"/>
+                                <exclude reference="bbL-bF-Dls"/>
+                                <exclude reference="uMK-8x-3Y3"/>
+                                <exclude reference="57G-dG-PTT"/>
+                                <exclude reference="6ia-YE-N43"/>
+                                <exclude reference="BFI-jY-7e7"/>
+                                <exclude reference="qqO-cR-vYN"/>
+                                <exclude reference="JZN-Fw-TrE"/>
+                                <exclude reference="SRC-uO-MgL"/>
+                                <exclude reference="VJv-hu-AeP"/>
+                                <exclude reference="xOh-L8-bZ4"/>
+                                <exclude reference="3vj-c6-nhq"/>
+                                <exclude reference="MUW-Ub-fv5"/>
+                                <exclude reference="y81-f4-oaV"/>
+                                <exclude reference="yC9-se-I7W"/>
+                                <exclude reference="6mW-cU-4qz"/>
+                                <exclude reference="RfF-ny-IL5"/>
+                                <exclude reference="W5z-W7-HWG"/>
+                                <exclude reference="eZA-lT-9IA"/>
+                                <exclude reference="NP6-MW-Q4F"/>
+                                <exclude reference="P3I-rJ-u7c"/>
+                                <exclude reference="Yjf-wC-jLB"/>
+                                <exclude reference="yQ9-8h-5Xt"/>
+                                <exclude reference="E32-Df-E9y"/>
+                                <exclude reference="zvR-b9-iV0"/>
+                                <exclude reference="Lfq-kR-yyZ"/>
+                                <exclude reference="buQ-vm-vOx"/>
+                                <exclude reference="eP0-1e-nbG"/>
+                                <exclude reference="hR7-xM-iyl"/>
+                                <exclude reference="pQj-Hp-DKP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Jc3-FK-V95"/>
+                                <include reference="Jdh-P9-Rjl"/>
+                                <include reference="bbL-bF-Dls"/>
+                                <include reference="uMK-8x-3Y3"/>
+                                <include reference="57G-dG-PTT"/>
+                                <include reference="6ia-YE-N43"/>
+                                <include reference="BFI-jY-7e7"/>
+                                <include reference="qqO-cR-vYN"/>
+                                <include reference="JZN-Fw-TrE"/>
+                                <include reference="SRC-uO-MgL"/>
+                                <include reference="VJv-hu-AeP"/>
+                                <include reference="xOh-L8-bZ4"/>
+                                <include reference="3vj-c6-nhq"/>
+                                <include reference="MUW-Ub-fv5"/>
+                                <include reference="y81-f4-oaV"/>
+                                <include reference="yC9-se-I7W"/>
+                                <include reference="6mW-cU-4qz"/>
+                                <include reference="RfF-ny-IL5"/>
+                                <include reference="W5z-W7-HWG"/>
+                                <include reference="eZA-lT-9IA"/>
+                                <include reference="NP6-MW-Q4F"/>
+                                <include reference="P3I-rJ-u7c"/>
+                                <include reference="Yjf-wC-jLB"/>
+                                <include reference="yQ9-8h-5Xt"/>
+                                <include reference="E32-Df-E9y"/>
+                                <include reference="zvR-b9-iV0"/>
+                                <include reference="Lfq-kR-yyZ"/>
+                                <include reference="buQ-vm-vOx"/>
+                                <include reference="eP0-1e-nbG"/>
+                                <include reference="hR7-xM-iyl"/>
+                                <include reference="pQj-Hp-DKP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="Jc3-FK-V95"/>
+                                <exclude reference="Jdh-P9-Rjl"/>
+                                <exclude reference="bbL-bF-Dls"/>
+                                <exclude reference="uMK-8x-3Y3"/>
+                                <exclude reference="57G-dG-PTT"/>
+                                <exclude reference="6ia-YE-N43"/>
+                                <exclude reference="BFI-jY-7e7"/>
+                                <exclude reference="qqO-cR-vYN"/>
+                                <exclude reference="JZN-Fw-TrE"/>
+                                <exclude reference="SRC-uO-MgL"/>
+                                <exclude reference="VJv-hu-AeP"/>
+                                <exclude reference="xOh-L8-bZ4"/>
+                                <exclude reference="3vj-c6-nhq"/>
+                                <exclude reference="MUW-Ub-fv5"/>
+                                <exclude reference="y81-f4-oaV"/>
+                                <exclude reference="yC9-se-I7W"/>
+                                <exclude reference="6mW-cU-4qz"/>
+                                <exclude reference="RfF-ny-IL5"/>
+                                <exclude reference="W5z-W7-HWG"/>
+                                <exclude reference="eZA-lT-9IA"/>
+                                <exclude reference="NP6-MW-Q4F"/>
+                                <exclude reference="P3I-rJ-u7c"/>
+                                <exclude reference="Yjf-wC-jLB"/>
+                                <exclude reference="yQ9-8h-5Xt"/>
+                                <exclude reference="E32-Df-E9y"/>
+                                <exclude reference="zvR-b9-iV0"/>
+                                <exclude reference="Lfq-kR-yyZ"/>
+                                <exclude reference="buQ-vm-vOx"/>
+                                <exclude reference="eP0-1e-nbG"/>
+                                <exclude reference="hR7-xM-iyl"/>
+                                <exclude reference="pQj-Hp-DKP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnCalculateOUTLET" destination="xNt-xh-qrT" id="kDm-y7-7bY"/>
+                        <outlet property="lblFinalAnswerOUTLET" destination="W0t-Fn-bbZ" id="Pv0-g2-QPK"/>
+                        <outlet property="lblTitleOUTLET" destination="1A9-9d-Bpm" id="mwM-L9-7Aj"/>
+                        <outlet property="sgmMissingVariableOUTLET" destination="FPf-mS-57Y" id="V0i-ZE-GeX"/>
+                        <outlet property="txtField1OUTLET" destination="7zd-c5-gYL" id="hmt-5b-5fl"/>
+                        <outlet property="txtField2OUTLET" destination="ktA-eG-upq" id="Z3z-Tf-uSc"/>
+                        <outlet property="txtField3OUTLET" destination="pSC-tB-ex3" id="T4I-7r-ZoI"/>
+                        <outlet property="txtField4OUTLET" destination="l74-H1-Pqf" id="GgY-Ov-Jnp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.28125" y="132.421875"/>
+        </scene>
+    </scenes>
+</document>

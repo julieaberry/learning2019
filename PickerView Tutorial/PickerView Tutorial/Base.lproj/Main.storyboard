@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aot-0T-KaU">
+                                <rect key="frame" x="56" y="393" width="1633" height="216"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.71583513769999996" green="0.32589119989999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIcker View Choice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwM-Ls-rYA">
+                                <rect key="frame" x="55.5" y="155" width="1001" height="24"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.71583513769999996" green="0.32589119989999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="0ty-vj-Co2"/>
+                            <constraint firstItem="Aot-0T-KaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9M5-3t-pXL"/>
+                            <constraint firstItem="Aot-0T-KaU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="Fgu-99-Pgw"/>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="centerY" secondItem="Aot-0T-KaU" secondAttribute="centerY" id="GO1-yi-Oyd"/>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.4" id="JYp-wi-nfB"/>
+                            <constraint firstItem="Aot-0T-KaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="S9U-Pj-Vaa"/>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="width" secondItem="Aot-0T-KaU" secondAttribute="width" id="We6-9Z-wwh"/>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="XC3-0l-Shq"/>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="axP-BT-ZXQ"/>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iBj-04-wrN"/>
+                            <constraint firstItem="Aot-0T-KaU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="jRm-wO-OjW"/>
+                            <constraint firstItem="Aot-0T-KaU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="k0a-Fh-ZiT"/>
+                            <constraint firstItem="Aot-0T-KaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lqy-3e-n5F"/>
+                            <constraint firstItem="iwM-Ls-rYA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.6" id="oIK-ui-aD3"/>
+                            <constraint firstItem="Aot-0T-KaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="tl8-0N-d1p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0ty-vj-Co2"/>
+                                <exclude reference="GO1-yi-Oyd"/>
+                                <exclude reference="JYp-wi-nfB"/>
+                                <exclude reference="We6-9Z-wwh"/>
+                                <exclude reference="XC3-0l-Shq"/>
+                                <exclude reference="axP-BT-ZXQ"/>
+                                <exclude reference="iBj-04-wrN"/>
+                                <exclude reference="oIK-ui-aD3"/>
+                                <exclude reference="9M5-3t-pXL"/>
+                                <exclude reference="Fgu-99-Pgw"/>
+                                <exclude reference="S9U-Pj-Vaa"/>
+                                <exclude reference="jRm-wO-OjW"/>
+                                <exclude reference="k0a-Fh-ZiT"/>
+                                <exclude reference="lqy-3e-n5F"/>
+                                <exclude reference="tl8-0N-d1p"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0ty-vj-Co2"/>
+                                <include reference="JYp-wi-nfB"/>
+                                <exclude reference="We6-9Z-wwh"/>
+                                <exclude reference="XC3-0l-Shq"/>
+                                <include reference="axP-BT-ZXQ"/>
+                                <include reference="iBj-04-wrN"/>
+                                <exclude reference="oIK-ui-aD3"/>
+                                <include reference="9M5-3t-pXL"/>
+                                <exclude reference="Fgu-99-Pgw"/>
+                                <exclude reference="S9U-Pj-Vaa"/>
+                                <exclude reference="jRm-wO-OjW"/>
+                                <include reference="k0a-Fh-ZiT"/>
+                                <exclude reference="lqy-3e-n5F"/>
+                                <include reference="tl8-0N-d1p"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="0ty-vj-Co2"/>
+                                <exclude reference="JYp-wi-nfB"/>
+                                <include reference="We6-9Z-wwh"/>
+                                <include reference="XC3-0l-Shq"/>
+                                <exclude reference="axP-BT-ZXQ"/>
+                                <exclude reference="iBj-04-wrN"/>
+                                <include reference="oIK-ui-aD3"/>
+                                <exclude reference="9M5-3t-pXL"/>
+                                <include reference="Fgu-99-Pgw"/>
+                                <include reference="S9U-Pj-Vaa"/>
+                                <include reference="jRm-wO-OjW"/>
+                                <exclude reference="k0a-Fh-ZiT"/>
+                                <include reference="lqy-3e-n5F"/>
+                                <exclude reference="tl8-0N-d1p"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0ty-vj-Co2"/>
+                                <include reference="JYp-wi-nfB"/>
+                                <exclude reference="We6-9Z-wwh"/>
+                                <exclude reference="XC3-0l-Shq"/>
+                                <include reference="axP-BT-ZXQ"/>
+                                <include reference="iBj-04-wrN"/>
+                                <exclude reference="oIK-ui-aD3"/>
+                                <include reference="9M5-3t-pXL"/>
+                                <exclude reference="Fgu-99-Pgw"/>
+                                <exclude reference="S9U-Pj-Vaa"/>
+                                <exclude reference="jRm-wO-OjW"/>
+                                <include reference="k0a-Fh-ZiT"/>
+                                <exclude reference="lqy-3e-n5F"/>
+                                <include reference="tl8-0N-d1p"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="0ty-vj-Co2"/>
+                                <include reference="JYp-wi-nfB"/>
+                                <exclude reference="We6-9Z-wwh"/>
+                                <exclude reference="XC3-0l-Shq"/>
+                                <include reference="axP-BT-ZXQ"/>
+                                <include reference="iBj-04-wrN"/>
+                                <exclude reference="oIK-ui-aD3"/>
+                                <include reference="9M5-3t-pXL"/>
+                                <exclude reference="Fgu-99-Pgw"/>
+                                <exclude reference="S9U-Pj-Vaa"/>
+                                <exclude reference="jRm-wO-OjW"/>
+                                <include reference="k0a-Fh-ZiT"/>
+                                <exclude reference="lqy-3e-n5F"/>
+                                <include reference="tl8-0N-d1p"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblPickerChoiceOUTLET" destination="iwM-Ls-rYA" id="uv3-Sc-S77"/>
+                        <outlet property="pkrPickerOUTLET" destination="Aot-0T-KaU" id="yXZ-l3-Mzw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.60714285714286" y="131.8840579710145"/>
+        </scene>
+    </scenes>
+</document>

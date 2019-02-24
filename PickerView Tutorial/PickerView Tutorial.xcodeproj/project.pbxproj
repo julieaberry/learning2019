@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AA4ECFD2222181100B639ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4ECFC2222181100B639ED /* AppDelegate.swift */; };
+		7AA4ECFF2222181100B639ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4ECFE2222181100B639ED /* ViewController.swift */; };
+		7AA4ED022222181100B639ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4ED002222181100B639ED /* Main.storyboard */; };
+		7AA4ED042222181300B639ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4ED032222181300B639ED /* Assets.xcassets */; };
+		7AA4ED072222181300B639ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4ED052222181300B639ED /* LaunchScreen.storyboard */; };
+		7AA4ED122222181300B639ED /* PickerView_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4ED112222181300B639ED /* PickerView_TutorialTests.swift */; };
+		7AA4ED1D2222181300B639ED /* PickerView_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4ED1C2222181300B639ED /* PickerView_TutorialUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AA4ED0E2222181300B639ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AA4ECF12222181100B639ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA4ECF82222181100B639ED;
+			remoteInfo = "PickerView Tutorial";
+		};
+		7AA4ED192222181300B639ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AA4ECF12222181100B639ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA4ECF82222181100B639ED;
+			remoteInfo = "PickerView Tutorial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AA4ECF92222181100B639ED /* PickerView Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PickerView Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA4ECFC2222181100B639ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AA4ECFE2222181100B639ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AA4ED012222181100B639ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AA4ED032222181300B639ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AA4ED062222181300B639ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AA4ED082222181300B639ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA4ED0D2222181300B639ED /* PickerView TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PickerView TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA4ED112222181300B639ED /* PickerView_TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView_TutorialTests.swift; sourceTree = "<group>"; };
+		7AA4ED132222181300B639ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA4ED182222181300B639ED /* PickerView TutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PickerView TutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA4ED1C2222181300B639ED /* PickerView_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView_TutorialUITests.swift; sourceTree = "<group>"; };
+		7AA4ED1E2222181300B639ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AA4ECF62222181100B639ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4ED0A2222181300B639ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4ED152222181300B639ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AA4ECF02222181100B639ED = {
+			isa = PBXGroup;
+			children = (
+				7AA4ECFB2222181100B639ED /* PickerView Tutorial */,
+				7AA4ED102222181300B639ED /* PickerView TutorialTests */,
+				7AA4ED1B2222181300B639ED /* PickerView TutorialUITests */,
+				7AA4ECFA2222181100B639ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AA4ECFA2222181100B639ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4ECF92222181100B639ED /* PickerView Tutorial.app */,
+				7AA4ED0D2222181300B639ED /* PickerView TutorialTests.xctest */,
+				7AA4ED182222181300B639ED /* PickerView TutorialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AA4ECFB2222181100B639ED /* PickerView Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4ECFC2222181100B639ED /* AppDelegate.swift */,
+				7AA4ECFE2222181100B639ED /* ViewController.swift */,
+				7AA4ED002222181100B639ED /* Main.storyboard */,
+				7AA4ED032222181300B639ED /* Assets.xcassets */,
+				7AA4ED052222181300B639ED /* LaunchScreen.storyboard */,
+				7AA4ED082222181300B639ED /* Info.plist */,
+			);
+			path = "PickerView Tutorial";
+			sourceTree = "<group>";
+		};
+		7AA4ED102222181300B639ED /* PickerView TutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4ED112222181300B639ED /* PickerView_TutorialTests.swift */,
+				7AA4ED132222181300B639ED /* Info.plist */,
+			);
+			path = "PickerView TutorialTests";
+			sourceTree = "<group>";
+		};
+		7AA4ED1B2222181300B639ED /* PickerView TutorialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4ED1C2222181300B639ED /* PickerView_TutorialUITests.swift */,
+				7AA4ED1E2222181300B639ED /* Info.plist */,
+			);
+			path = "PickerView TutorialUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AA4ECF82222181100B639ED /* PickerView Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA4ED212222181300B639ED /* Build configuration list for PBXNativeTarget "PickerView Tutorial" */;
+			buildPhases = (
+				7AA4ECF52222181100B639ED /* Sources */,
+				7AA4ECF62222181100B639ED /* Frameworks */,
+				7AA4ECF72222181100B639ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PickerView Tutorial";
+			productName = "PickerView Tutorial";
+			productReference = 7AA4ECF92222181100B639ED /* PickerView Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AA4ED0C2222181300B639ED /* PickerView TutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA4ED242222181300B639ED /* Build configuration list for PBXNativeTarget "PickerView TutorialTests" */;
+			buildPhases = (
+				7AA4ED092222181300B639ED /* Sources */,
+				7AA4ED0A2222181300B639ED /* Frameworks */,
+				7AA4ED0B2222181300B639ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AA4ED0F2222181300B639ED /* PBXTargetDependency */,
+			);
+			name = "PickerView TutorialTests";
+			productName = "PickerView TutorialTests";
+			productReference = 7AA4ED0D2222181300B639ED /* PickerView TutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7AA4ED172222181300B639ED /* PickerView TutorialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA4ED272222181300B639ED /* Build configuration list for PBXNativeTarget "PickerView TutorialUITests" */;
+			buildPhases = (
+				7AA4ED142222181300B639ED /* Sources */,
+				7AA4ED152222181300B639ED /* Frameworks */,
+				7AA4ED162222181300B639ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AA4ED1A2222181300B639ED /* PBXTargetDependency */,
+			);
+			name = "PickerView TutorialUITests";
+			productName = "PickerView TutorialUITests";
+			productReference = 7AA4ED182222181300B639ED /* PickerView TutorialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AA4ECF12222181100B639ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Julie Berry";
+				TargetAttributes = {
+					7AA4ECF82222181100B639ED = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7AA4ED0C2222181300B639ED = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7AA4ECF82222181100B639ED;
+					};
+					7AA4ED172222181300B639ED = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7AA4ECF82222181100B639ED;
+					};
+				};
+			};
+			buildConfigurationList = 7AA4ECF42222181100B639ED /* Build configuration list for PBXProject "PickerView Tutorial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AA4ECF02222181100B639ED;
+			productRefGroup = 7AA4ECFA2222181100B639ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AA4ECF82222181100B639ED /* PickerView Tutorial */,
+				7AA4ED0C2222181300B639ED /* PickerView TutorialTests */,
+				7AA4ED172222181300B639ED /* PickerView TutorialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AA4ECF72222181100B639ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA4ED072222181300B639ED /* LaunchScreen.storyboard in Resources */,
+				7AA4ED042222181300B639ED /* Assets.xcassets in Resources */,
+				7AA4ED022222181100B639ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4ED0B2222181300B639ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4ED162222181300B639ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AA4ECF52222181100B639ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA4ECFF2222181100B639ED /* ViewController.swift in Sources */,
+				7AA4ECFD2222181100B639ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4ED092222181300B639ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA4ED122222181300B639ED /* PickerView_TutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4ED142222181300B639ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA4ED1D2222181300B639ED /* PickerView_TutorialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AA4ED0F2222181300B639ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AA4ECF82222181100B639ED /* PickerView Tutorial */;
+			targetProxy = 7AA4ED0E2222181300B639ED /* PBXContainerItemProxy */;
+		};
+		7AA4ED1A2222181300B639ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AA4ECF82222181100B639ED /* PickerView Tutorial */;
+			targetProxy = 7AA4ED192222181300B639ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AA4ED002222181100B639ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA4ED012222181100B639ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AA4ED052222181300B639ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA4ED062222181300B639ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AA4ED1F2222181300B639ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AA4ED202222181300B639ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AA4ED222222181300B639ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "PickerView Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.PickerView-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AA4ED232222181300B639ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "PickerView Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.PickerView-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7AA4ED252222181300B639ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "PickerView TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.PickerView-TutorialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickerView Tutorial.app/PickerView Tutorial";
+			};
+			name = Debug;
+		};
+		7AA4ED262222181300B639ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "PickerView TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.PickerView-TutorialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PickerView Tutorial.app/PickerView Tutorial";
+			};
+			name = Release;
+		};
+		7AA4ED282222181300B639ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "PickerView TutorialUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.PickerView-TutorialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PickerView Tutorial";
+			};
+			name = Debug;
+		};
+		7AA4ED292222181300B639ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "PickerView TutorialUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.PickerView-TutorialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "PickerView Tutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AA4ECF42222181100B639ED /* Build configuration list for PBXProject "PickerView Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA4ED1F2222181300B639ED /* Debug */,
+				7AA4ED202222181300B639ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA4ED212222181300B639ED /* Build configuration list for PBXNativeTarget "PickerView Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA4ED222222181300B639ED /* Debug */,
+				7AA4ED232222181300B639ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA4ED242222181300B639ED /* Build configuration list for PBXNativeTarget "PickerView TutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA4ED252222181300B639ED /* Debug */,
+				7AA4ED262222181300B639ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA4ED272222181300B639ED /* Build configuration list for PBXNativeTarget "PickerView TutorialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA4ED282222181300B639ED /* Debug */,
+				7AA4ED292222181300B639ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AA4ECF12222181100B639ED /* Project object */;
+}
