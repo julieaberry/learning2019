@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblFinalResultsOUTLET: UILabel!
     
     
-    // GLOBAL VARIABLES
+    // GLOBAL VARIABLES / HANDLERS
         // store the values of user input
     var hexPart1 : String?
     var hexPart2 : String?
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    // HANDLERS
+   
     
     
     
@@ -55,6 +55,10 @@ class ViewController: UIViewController {
             txtField1OUTLET.placeholder = "1st and 2nd hex characters"
             txtField2OUTLET.placeholder = "3rd and 4th hex characters"
             txtField3OUTLET.placeholder = "5th and 6th hex characters"
+            // error handling - limit user keyboard type
+            txtField1OUTLET.keyboardType = UIKeyboardType.default
+            txtField2OUTLET.keyboardType = UIKeyboardType.default
+            txtField3OUTLET.keyboardType = UIKeyboardType.default
         case 1:
             // set converdion type
             conversionType = "RGB to Hex"
@@ -62,6 +66,10 @@ class ViewController: UIViewController {
             txtField1OUTLET.placeholder = "Red value"
             txtField2OUTLET.placeholder = "Green value"
             txtField3OUTLET.placeholder = "Blue value"
+            // error handling - limit user keyboard type
+            txtField1OUTLET.keyboardType = UIKeyboardType.decimalPad
+            txtField2OUTLET.keyboardType = UIKeyboardType.decimalPad
+            txtField3OUTLET.keyboardType = UIKeyboardType.decimalPad
         default:
             conversionType = "Hex to RGB"
         }
@@ -89,23 +97,40 @@ class ViewController: UIViewController {
         default:
             break
         }
+        // remove text from fields when button is used
+        txtField1OUTLET.text?.removeAll()
+        txtField2OUTLET.text?.removeAll()
+        txtField3OUTLET.text?.removeAll()
     }
     
-    // DECLARATIONS
     
-    func assignHexValues() -> Bool{
-        // translate hex inputs
-        hexPart1 = txtField1OUTLET.text
-        hexPart2 = txtField2OUTLET.text
-        hexPart3 = txtField3OUTLET.text
+    
+    // DECLARATION FUNCTIONS
+    
+    func assignHexValues() -> Bool {
+        // error handling - check for field content
+        if (!txtField1OUTLET.hasText() || !txtField2OUTLET.hasText() || !txtField3OUTLET.hasText()){
+            return false
+        } else {
+            // translate hex inputs
+            hexPart1 = txtField1OUTLET.text
+            hexPart2 = txtField2OUTLET.text
+            hexPart3 = txtField3OUTLET.text
+        }
         return true
     }
     
     func assignRGBValues() -> Bool{
+        
+        // error handling - check for field content
+        if (!txtField1OUTLET.hasText() || !txtField2OUTLET.hasText() || !txtField3OUTLET.hasText()){
+            return false
+        } else {
         // translate RGB values from text to Int by force-unwrapping
         redValue = Int(txtField1OUTLET.text!)
         greenValue = Int(txtField2OUTLET.text!)
         blueValue = Int(txtField3OUTLET.text!)
+        }
         return true
     }
     
@@ -122,6 +147,8 @@ class ViewController: UIViewController {
     // display the results in Final Result
     func displayRGBValues() {
         lblFinalResultsOUTLET.text = "Red value is: " + String(redValue!) + ", green value is: " + String(greenValue!) + ", and blue value is: " + String(blueValue!)
+        // label BG changes to reflect the RGB values
+            // convert values from Int to CGFloat and divide by 255
         lblFinalResultsOUTLET.backgroundColor = UIColor.init(red: CGFloat(redValue!)/255, green: CGFloat(greenValue!)/255, blue: CGFloat(blueValue!)/255, alpha: 1)
     }
     
@@ -135,6 +162,8 @@ class ViewController: UIViewController {
     
     func displayHexValue(){
         lblFinalResultsOUTLET.text = "Hexcode value is: 0x" + hexPart1! + hexPart2! + hexPart3!
+        // label BG changes to reflect the RGB values
+            // convert values from Int to CGFloat and divide by 255
         lblFinalResultsOUTLET.backgroundColor = UIColor.init(red: CGFloat(redValue!)/255, green: CGFloat(greenValue!)/255, blue: CGFloat(blueValue!)/255, alpha: 1)
     }
 
