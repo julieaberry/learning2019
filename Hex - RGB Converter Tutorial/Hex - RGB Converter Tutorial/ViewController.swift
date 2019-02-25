@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     
     // ACTIONS
     @IBAction func chooseConversionTypeACTION(_ sender: UISegmentedControl) {
+        // testing which segment is selected
         switch sgmChooseConversionOUTLET.selectedSegmentIndex {
         case 0:
             // set converdion type
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressConvertButtonACTION(_ sender: UIButton) {
+        // testing conversion type
         switch conversionType {
         case "Hex to RGB":
             // check for Hex values
@@ -79,7 +81,7 @@ class ViewController: UIViewController {
         case "RGB to Hex":
             // check for RGB values
             if(assignRGBValues() == true){
-                // then conversion type
+                // then do conversion
                 convertIntToHex()
                 // then display results
                 displayHexValue()
@@ -92,36 +94,49 @@ class ViewController: UIViewController {
     // DECLARATIONS
     
     func assignHexValues() -> Bool{
-        // return a Boolean
+        // translate hex inputs
+        hexPart1 = txtField1OUTLET.text
+        hexPart2 = txtField2OUTLET.text
+        hexPart3 = txtField3OUTLET.text
         return true
     }
     
     func assignRGBValues() -> Bool{
-        //
+        // translate RGB values from text to Int by force-unwrapping
+        redValue = Int(txtField1OUTLET.text!)
+        greenValue = Int(txtField2OUTLET.text!)
+        blueValue = Int(txtField3OUTLET.text!)
         return true
     }
     
-
-    
-    
-    // CONVERSION FUNCTIONS
+    // CONVERT / DISPLAY FUNCTIONS
     func convertHexToInt(){
+        // looking for stringd that represent hex numbers
+        // handle nil entry,
+        // and 2 hex characters represent 8 bytes each = 16
+        redValue = strtol(hexPart1, nil, 16)
+        greenValue = strtol(hexPart2, nil, 16)
+        redValue = strtol(hexPart3, nil, 16)
         
     }
-    
-    func displayRGBValues(){
-        
+    // display the results in Final Result
+    func displayRGBValues() {
+        lblFinalResultsOUTLET.text = "Red value is: " + String(redValue!) + ", green value is: " + String(greenValue!) + ", and blue value is: " + String(blueValue!)
+        lblFinalResultsOUTLET.backgroundColor = UIColor.init(red: CGFloat(redValue!)/255, green: CGFloat(greenValue!)/255, blue: CGFloat(blueValue!)/255, alpha: 1)
     }
     
     func convertIntToHex(){
+        // assign string versions of each number
+        hexPart1 = String(format: "%0.2x", redValue!)
+        hexPart2 = String(format: "%0.2x", greenValue!)
+        hexPart3 = String(format: "%0.2x", blueValue!)
         
     }
     
     func displayHexValue(){
-        
+        lblFinalResultsOUTLET.text = "Hexcode value is: 0x" + hexPart1! + hexPart2! + hexPart3!
+        lblFinalResultsOUTLET.backgroundColor = UIColor.init(red: CGFloat(redValue!)/255, green: CGFloat(greenValue!)/255, blue: CGFloat(blueValue!)/255, alpha: 1)
     }
-    
-    // HELPER FUNCTIONS
 
 }
 
