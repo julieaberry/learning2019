@@ -6,6 +6,10 @@
 //  Copyright © 2019 Julie Berry. All rights reserved.
 //
 
+// TODO: add remaining constraints
+// TODO: fix issue - only 3 questions are asked
+
+
 import UIKit
 
 class ViewController: UIViewController {
