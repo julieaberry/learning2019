@@ -6,6 +6,8 @@
 //  Copyright © 2019 Julie Berry. All rights reserved.
 //
 
+
+// TODO: FIXIT - UI doesnt display question until user inputs a number ??? NOTE: done by calling the function in viewDidLoad
 import UIKit
 
 class ViewController: UIViewController {
@@ -25,18 +27,21 @@ class ViewController: UIViewController {
     var correctAnswer : Int?
     var userInput : Int?
     var score : Int = 0
-    var questionAttempted : Int = 0
+    var questionsAttempted : Int = 0
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // begin UI by displaying a question
+        displayQuestion()
     }
     
     
     // ACTIONS
     @IBAction func pressCheckButtonACTION(_ sender: Any) {
-        // FIRST check if use input exists and can be stored as an Int
+        // !!!!! FIRST check if use input exists and can be stored as an Int
             // if entry is nil or is a non-integer then nothing will happen
         if let _ = Int(txtInputOUTLET.text!) {
         // assign user input
@@ -47,16 +52,23 @@ class ViewController: UIViewController {
             // increase score
             score += 1
             // prompt user with status
-            lblScoreOUTLET.text = "Correct!"
+            lblScoreOUTLET.text = "Correct! " + String(score) + " / " +  String(questionsAttempted) + " questions answered correctly"
+            // change UI color
+            lblScoreOUTLET.backgroundColor = UIColor.green
             
+    
         } else {
             // prompt user with status
             lblScoreOUTLET.text = "Incorrect!"
+            // change UI color
+            lblScoreOUTLET.backgroundColor = UIColor.red
         }
         // then have the button display another question
         displayQuestion()
         
         }
+        // remove text when button is pressed - move this to if let?
+        txtInputOUTLET.text?.removeAll()
     }
     
     
