@@ -8,6 +8,8 @@
 
 
 // TODO: FIXIT - UI doesnt display question until user inputs a number ??? NOTE: done by calling the function in viewDidLoad
+// TODO: add contraints & UI color sceme
+
 import UIKit
 
 class ViewController: UIViewController {
