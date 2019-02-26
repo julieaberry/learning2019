@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     // OUTLETS
     
     @IBOutlet weak var lblTitleOUTLET: UILabel!
@@ -21,9 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnConvertOUTLET: UIButton!
     @IBOutlet weak var lblFinalResultsOUTLET: UILabel!
     
-    
     // GLOBAL VARIABLES / HANDLERS
-        // store the values of user input
+    // store the values of user input
     var hexPart1 : String?
     var hexPart2 : String?
     var hexPart3 : String?
@@ -33,23 +31,18 @@ class ViewController: UIViewController {
     // error handling - default hex to RGB
     var conversionType : String = "Hex to RGB"
     
-
-    // OVERRIDES
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-   
-    
-    
-    
     // ACTIONS
-    @IBAction func chooseConversionTypeACTION(_ sender: UISegmentedControl) {
-        // testing which segment is selected
+        // SEGMENTED CONTROL
+    @IBAction func chooseConverstionTypeACTION(_ sender: UISegmentedControl) {
+        // test which segment is selected
         switch sgmChooseConversionOUTLET.selectedSegmentIndex {
         case 0:
-            // set converdion type
+            // set conversion type
             conversionType = "Hex to RGB"
             // set placeholder text
             txtField1OUTLET.placeholder = "1st and 2nd hex characters"
@@ -60,7 +53,7 @@ class ViewController: UIViewController {
             txtField2OUTLET.keyboardType = UIKeyboardType.default
             txtField3OUTLET.keyboardType = UIKeyboardType.default
         case 1:
-            // set converdion type
+            // set conversion type
             conversionType = "RGB to Hex"
             // set placeholder text
             txtField1OUTLET.placeholder = "Red value"
@@ -74,21 +67,21 @@ class ViewController: UIViewController {
             conversionType = "Hex to RGB"
         }
     }
-    
+            // CONVERT BUTTON
     @IBAction func pressConvertButtonACTION(_ sender: UIButton) {
-        // testing conversion type
+        // test conversion type
         switch conversionType {
         case "Hex to RGB":
-            // check for Hex values
-            if(assignHexValues() == true) {
+             // check for Hex values
+            if (assignHexValues() == true){
                 // then do conversion
                 convertHexToInt()
                 // then display results
                 displayRGBValues()
             }
         case "RGB to Hex":
-            // check for RGB values
-            if(assignRGBValues() == true){
+            // check for Hex values
+            if (assignRGBValues() == true){
                 // then do conversion
                 convertIntToHex()
                 // then display results
@@ -103,8 +96,6 @@ class ViewController: UIViewController {
         txtField3OUTLET.text?.removeAll()
     }
     
-    
-    
     // DECLARATION FUNCTIONS
     
     func assignHexValues() -> Bool {
@@ -112,7 +103,7 @@ class ViewController: UIViewController {
         if (!txtField1OUTLET.hasText() || !txtField2OUTLET.hasText() || !txtField3OUTLET.hasText()){
             return false
         } else {
-            // translate hex inputs
+             // translate hex inputs
             hexPart1 = txtField1OUTLET.text
             hexPart2 = txtField2OUTLET.text
             hexPart3 = txtField3OUTLET.text
@@ -120,30 +111,31 @@ class ViewController: UIViewController {
         return true
     }
     
-    func assignRGBValues() -> Bool{
-        
+    func assignRGBValues() -> Bool {
         // error handling - check for field content
         if (!txtField1OUTLET.hasText() || !txtField2OUTLET.hasText() || !txtField3OUTLET.hasText()){
             return false
         } else {
-        // translate RGB values from text to Int by force-unwrapping
-        redValue = Int(txtField1OUTLET.text!)
-        greenValue = Int(txtField2OUTLET.text!)
-        blueValue = Int(txtField3OUTLET.text!)
+            // translate RGB values from text to Int by force-unwrapping
+            redValue = Int(txtField1OUTLET.text!)
+            greenValue = Int(txtField2OUTLET.text!)
+            blueValue = Int(txtField3OUTLET.text!)
         }
         return true
     }
     
+    
     // CONVERT / DISPLAY FUNCTIONS
-    func convertHexToInt(){
+    
+    func convertHexToInt() {
         // looking for stringd that represent hex numbers
         // handle nil entry,
         // and 2 hex characters represent 8 bytes each = 16
         redValue = strtol(hexPart1, nil, 16)
         greenValue = strtol(hexPart2, nil, 16)
-        redValue = strtol(hexPart3, nil, 16)
-        
+        blueValue = strtol(hexPart3, nil, 16)
     }
+    
     // display the results in Final Result
     func displayRGBValues() {
         lblFinalResultsOUTLET.text = "Red value is: " + String(redValue!) + ", green value is: " + String(greenValue!) + ", and blue value is: " + String(blueValue!)
@@ -152,12 +144,11 @@ class ViewController: UIViewController {
         lblFinalResultsOUTLET.backgroundColor = UIColor.init(red: CGFloat(redValue!)/255, green: CGFloat(greenValue!)/255, blue: CGFloat(blueValue!)/255, alpha: 1)
     }
     
-    func convertIntToHex(){
+    func convertIntToHex() {
         // assign string versions of each number
         hexPart1 = String(format: "%0.2x", redValue!)
         hexPart2 = String(format: "%0.2x", greenValue!)
         hexPart3 = String(format: "%0.2x", blueValue!)
-        
     }
     
     func displayHexValue(){
@@ -166,6 +157,10 @@ class ViewController: UIViewController {
             // convert values from Int to CGFloat and divide by 255
         lblFinalResultsOUTLET.backgroundColor = UIColor.init(red: CGFloat(redValue!)/255, green: CGFloat(greenValue!)/255, blue: CGFloat(blueValue!)/255, alpha: 1)
     }
-
+    
+    
 }
+
+
+
 
