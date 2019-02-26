@@ -36,11 +36,28 @@ class ViewController: UIViewController {
     
     // ACTIONS
     @IBAction func pressCheckButtonACTION(_ sender: Any) {
-        //
+        // assign user input
+        userInput = Int(txtInputOUTLET.text!)!
+        // check if use input exists when button is pressed
+        // display response depending on if correct is true or false
+        if(checkIfCorrect() == true) {
+            // increase score
+            score += 1
+            // prompt user with status
+            lblScoreOUTLET.text = "Correct!"
+            
+        } else {
+            // prompt user with status
+            lblScoreOUTLET.text = "Incorrect!"
+        }
+        // then have the button display another question
+        displayQuestion()
     }
     
     
     // FUNCTIONS
+    
+    // assigning random number selection
     func chooseRandomNumbers(){
         // generate a random number less than 10
         randomNumber1 = Int(arc4random_uniform(10))
@@ -49,18 +66,29 @@ class ViewController: UIViewController {
         if (randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber){
             chooseRandomNumbers()
         }
+        lastRandomNumber = randomNumber1
+        // note: random numbers will be displayed in displayQuestion()
         
-        
-        
+        // assign the answer
+        correctAnswer = randomNumber1! + randomNumber2!
     }
     
+    //
     func displayQuestion(){
-        //
+        // generate random numbers and assign their values
+        chooseRandomNumbers()
+        // assign the question text to a string  - to the question label - rn1 + rn2 = ?
+        lblQuestionOUTLET.text = String(randomNumber1!) + " + " + String(randomNumber2!) + " = ?"
         
     }
     
     func checkIfCorrect() -> Bool {
-        return false
+        // check user input agains correct answer
+        if (userInput! == correctAnswer) {
+            return true
+        } else {
+            return false
+        }
     }
     
 
