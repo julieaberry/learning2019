@@ -36,9 +36,12 @@ class ViewController: UIViewController {
     
     // ACTIONS
     @IBAction func pressCheckButtonACTION(_ sender: Any) {
+        // FIRST check if use input exists and can be stored as an Int
+            // if entry is nil or is a non-integer then nothing will happen
+        if let _ = Int(txtInputOUTLET.text!) {
         // assign user input
         userInput = Int(txtInputOUTLET.text!)!
-        // check if use input exists when button is pressed
+       
         // display response depending on if correct is true or false
         if(checkIfCorrect() == true) {
             // increase score
@@ -52,6 +55,8 @@ class ViewController: UIViewController {
         }
         // then have the button display another question
         displayQuestion()
+        
+        }
     }
     
     
