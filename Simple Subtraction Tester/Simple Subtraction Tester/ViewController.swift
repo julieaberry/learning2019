@@ -50,30 +50,36 @@ class ViewController: UIViewController {
     }
     
     // button
-    @IBAction func checkAnswerACTION(_ sender: Any) {
-        // check user input agains correct answer
-        userInput = Int(txtInputOUTLET.text!)!
-        questionAnswered += 1
-        
-        if (checkAnswer() == true) {
-            score += 1
-            lblScoreOUTLET.text = "Correct!"
-            
-        } else {
-            //
-            lblScoreOUTLET.text = "Incorrect!"
+    @IBAction func checkAnswerACTION(_ sender: UIButton) {
+        // !!!!! FIRST check if use input exists and can be stored as an Int
+        // if entry is nil or is a non-integer then nothing will happen
+        if let _ = Int(txtInputOUTLET.text!){
+            userInput = Int(txtInputOUTLET.text!)!
+            questionAnswered += 1
+            // display response depending on if correct is true or false
+            if (checkAnswer() == true){
+                 // increase score
+                score += 1
+                // prompt user with status
+                lblScoreOUTLET.text = "Correct! " + String(score) + "/" + String(questionAnswered) + " questions answered correctly"
+                // change UI color
+                lblScoreOUTLET.backgroundColor = UIColor.green
+            } else {
+                // prompt user with status
+                lblScoreOUTLET.text = "Incorrect. " + String(score) + "/" + String(questionAnswered) + " questions answered correctly"
+                // change UI color
+                lblScoreOUTLET.backgroundColor = UIColor.red
+            }
+            switch difficulty {
+            case "Easier":
+                displayEasyQuestion()
+            case "Harder":
+                displayHardQuestion()
+            default:
+                break
+            }
         }
-        switch difficulty {
-        case "Easier":
-            //
-            displayEasyQuestion()
-        case "Harder":
-            //
-            displayHardQuestion()
-            
-        default:
-            break
-        }
+        txtInputOUTLET.text?.removeAll()
     }
     
     
