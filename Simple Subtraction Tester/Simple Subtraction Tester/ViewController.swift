@@ -26,17 +26,54 @@ class ViewController: UIViewController {
     var userInput : Int?
     var score : Int = 0
     var questionAnswered : Int = 0
+    var difficulty : String = "Easier"
     
     
     // ACTIONS
    
     // segmented control
     @IBAction func chooseDifficultyACTION(_ sender: Any) {
-        
+        switch sgmDifficultyChoiceOUTLET.selectedSegmentIndex {
+        case 0:
+            // set difficulty level
+            difficulty = "Easier"
+            // which question to display
+            displayEasyQuestion()
+        case 1:
+            // set difficulty level
+            difficulty = "Harder"
+            // which question to display
+            displayHardQuestion()
+        default:
+            break
+        }
     }
     
     // button
     @IBAction func checkAnswerACTION(_ sender: Any) {
+        // check user input agains correct answer
+        userInput = Int(txtInputOUTLET.text!)!
+        questionAnswered += 1
+        
+        if (checkAnswer() == true) {
+            score += 1
+            lblScoreOUTLET.text = "Correct!"
+            
+        } else {
+            //
+            lblScoreOUTLET.text = "Incorrect!"
+        }
+        switch difficulty {
+        case "Easier":
+            //
+            displayEasyQuestion()
+        case "Harder":
+            //
+            displayHardQuestion()
+            
+        default:
+            break
+        }
     }
     
     

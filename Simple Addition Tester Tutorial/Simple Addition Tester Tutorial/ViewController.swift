@@ -102,7 +102,7 @@ class ViewController: UIViewController {
     }
     
     func checkIfCorrect() -> Bool {
-        // check user input agains correct answer
+        // check user input against correct answer
         if (userInput! == correctAnswer) {
             return true
         } else {
