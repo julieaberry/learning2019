@@ -6,6 +6,10 @@
 //  Copyright © 2019 Julie Berry. All rights reserved.
 //
 
+
+// TODO: add constraints
+
+
 import UIKit
 
 class ViewController: UIViewController {
