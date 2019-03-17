@@ -32,13 +32,29 @@ class ViewController: UIViewController {
     
     
     // ACTIONS
-    
+        // segmented control action
     @IBAction func chooseDifficultyACTION(_ sender: Any) {
         //
+        switch sgmDifficultyChoiceOUTLET.selectedSegmentIndex {
+        case 0 :
+            difficulty = "Easy"
+            displayEasyQuestion()
+        case 1 :
+            difficulty = "Medium"
+            displayMediumQuestion()
+        case 2 :
+            difficulty = "Hard"
+            displayHardQuestion()
+        default:
+            break
+        }
     }
     
     @IBAction func chooseInputValueACTION(_ sender: Any) {
-        //
+        // check slider value and round up to the nearest 1
+        userAnswer = Int(roundf(sldInputValueOUTLET.value))
+        // use the string form of userAnswer to display slider value
+        lblSliderLabelOUTLET.text = String(userAnswer!)
     }
     
     
@@ -53,25 +69,25 @@ class ViewController: UIViewController {
         switch difficultyLevel {
             // generate numbers for each level
         case "Easy" :
-            // include only numbers 0 - 4
-            randomNumber1 = Int(arc4random_uniform(5))
-            randomNumber2 = Int(arc4random_uniform(5))
+            // set slider values
+            randomNumber1 = Int(arc4random_uniform(0))
+            randomNumber2 = Int(arc4random_uniform(16))
             // if random numbers are equal to lastRandomNumber, choose "Easy" again
             if (randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber) {
                 chooseRandomNumbers(difficultyLevel: "Easy")
             }
         case "Medium" :
-            // exclude case "Easy" numbers 0 - 4
-            randomNumber1 = 5 + Int(arc4random_uniform(10))
-            randomNumber2 = 5 + Int(arc4random_uniform(10))
+            //  set slider values to exclude case "Easy" numbers
+            randomNumber1 = 5 + Int(arc4random_uniform(25))
+            randomNumber2 = 5 + Int(arc4random_uniform(81))
             // if random numbers are equal to lastRandomNumber, choose "Medium" again
             if (randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber) {
                 chooseRandomNumbers(difficultyLevel: "Medium")
             }
         case "Hard" :
             // exclude case "Medium"
-            randomNumber1 = 5 - Int(arc4random_uniform(11))
-            randomNumber2 = 5 - Int(arc4random_uniform(11))
+            randomNumber1 = 5 - Int(arc4random_uniform(-25))
+            randomNumber2 = 5 - Int(arc4random_uniform(25))
             // if random numbers are equal to lastRandomNumber, choose "Hard" again
             if (randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber) {
                 chooseRandomNumbers(difficultyLevel: "Hard")
@@ -107,7 +123,11 @@ class ViewController: UIViewController {
     
     // response test
     func checkIfCorrect() -> Bool {
-    return false
+        if (userAnswer == correctAnswer){
+            return true
+        } else {
+            return false
+        }
     }
     
     
