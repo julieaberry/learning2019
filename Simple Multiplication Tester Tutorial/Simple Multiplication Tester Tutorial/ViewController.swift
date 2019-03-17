@@ -48,12 +48,36 @@ class ViewController: UIViewController {
     
     
     // FUNCTIONS
+    // test for difficulty level selection
     func chooseRandomNumbers(difficultyLevel : String){
         switch difficultyLevel {
-        case <#pattern#>:
-            <#code#>
+            // generate numbers for each level
+        case "Easy" :
+            // include only numbers 0 - 4
+            randomNumber1 = Int(arc4random_uniform(5))
+            randomNumber2 = Int(arc4random_uniform(5))
+            // if random numbers are equal to lastRandomNumber, choose "Easy" again
+            if (randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber) {
+                chooseRandomNumbers(difficultyLevel: "Easy")
+            }
+        case "Medium" :
+            // exclude case "Easy" numbers 0 - 4
+            randomNumber1 = 5 + Int(arc4random_uniform(10))
+            randomNumber2 = 5 + Int(arc4random_uniform(10))
+            // if random numbers are equal to lastRandomNumber, choose "Medium" again
+            if (randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber) {
+                chooseRandomNumbers(difficultyLevel: "Medium")
+            }
+        case "Hard" :
+            // exclude case "Medium"
+            randomNumber1 = 5 - Int(arc4random_uniform(11))
+            randomNumber2 = 5 - Int(arc4random_uniform(11))
+            // if random numbers are equal to lastRandomNumber, choose "Hard" again
+            if (randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber) {
+                chooseRandomNumbers(difficultyLevel: "Hard")
+            }
         default:
-            <#code#>
+            break
         }
     }
     
