@@ -48,8 +48,31 @@ class ViewController: UIViewController {
     
     
     // FUNCTIONS
+    func chooseRandomNumbers(difficultyLevel : String){
+        switch difficultyLevel {
+        case <#pattern#>:
+            <#code#>
+        default:
+            <#code#>
+        }
+    }
     
+    // define difficulty levels
+    func displayEasyQuestion(){
+        
+    }
     
+    func displayMediumQuestion(){
+        
+    }
+    
+    func displayHardQuestion(){
+        
+    }
+    
+    func checkIfCorrect() -> Bool {
+    return false
+    }
     
     
     // OVERRIDES
