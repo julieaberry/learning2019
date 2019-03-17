@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     
     
     // ACTIONS
+    
         // segmented control action
     @IBAction func chooseDifficultyACTION(_ sender: Any) {
         //
@@ -50,6 +51,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // use slider to select and display user answer
     @IBAction func chooseInputValueACTION(_ sender: Any) {
         // check slider value and round up to the nearest 1
         userAnswer = Int(roundf(sldInputValueOUTLET.value))
@@ -57,9 +59,39 @@ class ViewController: UIViewController {
         lblSliderLabelOUTLET.text = String(userAnswer!)
     }
     
-    
+    // test user responses
     @IBAction func checkAnswerACTION(_ sender: Any) {
-        //
+        // check for empty response
+        if let _ = userAnswer{
+            questionsAnswered += 1
+            // check for correct response
+            if (checkIfCorrect() == true){
+                // increase score
+                score += 1
+                // display "correct" output to user
+                lblScoreOUTLET.text = "Correct! " + String(score) + "/" + String(questionsAnswered) + " questions answered correcty"
+                // change bg color to green if correct
+                lblScoreOUTLET.backgroundColor = UIColor.green
+            } else {
+                // display "incorrect" ouptput to user
+                lblScoreOUTLET.text = "Incorrect. " + String(score) + "/" + String(questionsAnswered) + " questions answered correcty"
+                // change lbl bg to red
+                lblScoreOUTLET.backgroundColor = UIColor.red
+            }
+            
+            // display a new question
+            switch difficulty {
+            case "Easy":
+                displayEasyQuestion()
+            case "Medium":
+                displayMediumQuestion()
+            case "Hard":
+                displayHardQuestion()
+            default:
+                break
+            }
+        }
+
     }
     
     
