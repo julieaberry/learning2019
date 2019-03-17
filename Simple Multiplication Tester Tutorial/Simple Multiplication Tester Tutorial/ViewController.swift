@@ -81,19 +81,31 @@ class ViewController: UIViewController {
         }
     }
     
-    // define difficulty levels
+    // define questions for difficulty levels
+        // rn1  * rn2  =  ?
+            // cant these be integrrated into the switch?
     func displayEasyQuestion(){
-        
+        // call function to choose random numbers
+        chooseRandomNumbers(difficultyLevel: "Easy")
+         // set question text
+        lblQuestionOUTLET.text = String(randomNumber1!) + "  x  " + String(randomNumber2!) + "  =  ?"
     }
     
     func displayMediumQuestion(){
-        
+        // call function to choose random numbers
+        chooseRandomNumbers(difficultyLevel: "Medium")
+        // set question text
+        lblQuestionOUTLET.text = String(randomNumber1!) + "  x  " + String(randomNumber2!) + "  =  ?"
     }
     
     func displayHardQuestion(){
-        
+        // call function to choose random numbers
+        chooseRandomNumbers(difficultyLevel: "Hard")
+        // set question text
+        lblQuestionOUTLET.text = String(randomNumber1!) + "  x  " + String(randomNumber2!) + "  =  ?"
     }
     
+    // response test
     func checkIfCorrect() -> Bool {
     return false
     }
