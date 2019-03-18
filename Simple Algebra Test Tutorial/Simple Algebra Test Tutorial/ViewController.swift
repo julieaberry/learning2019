@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtInputOUTLET: UITextField!
     @IBOutlet weak var lblRightOrWrongOUTLET: UILabel!
     @IBOutlet weak var btnCheckOUTLET: UIButton!
-    @IBOutlet weak var pgvProgressViewOUTLET: UIView!
+    @IBOutlet weak var pgvProgressViewOUTLET: UIProgressView!
     
     
     // GLOBAL VARIABLES
@@ -33,24 +33,46 @@ class ViewController: UIViewController {
     
     // ACTIONS
     
-    // button
+        // this can be done as a switch
+    // what happens when the button is touched
     @IBAction func checkIfCorrectACTION(_ sender: UIButton) {
-        // what happens when the button is pressed
-        
-        // takes in user input from text field
-        
-        // perform a check to see if answer is correct
-            // if correct
-                // increase score
-                // increase progress bar
-                // display message to user
-                // load the next question
-            // if incorrect
-                // increase progress bar
-                // display message to user
-                // load the next question
-            // if nothing is entered
-                // nothing happens
+       // assign input number
+        inputNumber = Int(txtInputOUTLET.text!)!
+        // check if progress < 1 (at 10 questions) prompt user to continue or quit
+        if (pgvProgressViewOUTLET.progress < 1) {
+            // then if answer is correct
+            if (checkIfCorrect() == true) {
+                // display "correct message to user"
+                lblRightOrWrongOUTLET.text = "Correct!"
+                // increase progress by 1
+                pgvProgressViewOUTLET.progress += 0.1
+                // check if progress bar is at the end (1)
+                if (pgvProgressViewOUTLET.progress == 1) {
+                    // change question text
+                    lblQuestionOUTLET.text = "Congratulations, you now have 10 points. Keep going?"
+                     
+                     // TODO - change text on button
+                     // TODO - change text on answer display
+ 
+                } else {
+                    // if progress bar is not at the end load another question
+                    displayQuestion()
+                }
+                
+              // if answer is incorrect
+            } else if (checkIfCorrect() == false) {
+                // display "incorrect" message
+                lblRightOrWrongOUTLET.text = "Incorrect, try again"
+                // and load a new question
+                displayQuestion()
+            }
+            // if the progress bar is complete once the button is touched
+        } else if (pgvProgressViewOUTLET.progress == 1) {
+            // load a new question
+            displayQuestion()
+            // set progress back to 0
+            pgvProgressViewOUTLET.progress = 0
+        }
     }
     
     
@@ -90,18 +112,13 @@ class ViewController: UIViewController {
     }
 
     
-    // progress bar
- 
-    
-    
-    
-    
     
     // OVERRIDES
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // display the first questions as soon as the app loads
+        displayQuestion()
     }
 
 

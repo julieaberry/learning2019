@@ -808,7 +808,7 @@
                         <outlet property="lblQuestionOUTLET" destination="hV7-3r-Ehn" id="1lY-bh-gVr"/>
                         <outlet property="lblRightOrWrongOUTLET" destination="NKY-4K-B7M" id="zT9-yN-IgN"/>
                         <outlet property="lblTitleOUTLET" destination="ddd-p1-a7i" id="WUN-tb-0qq"/>
-                        <outlet property="pgvProgressViewOUTLET" destination="F67-3V-X7q" id="ksN-nH-cVD"/>
+                        <outlet property="pgvProgressViewOUTLET" destination="HJr-hn-Jyt" id="3LN-iZ-n0F"/>
                         <outlet property="txtInputOUTLET" destination="ysi-0r-9Fz" id="NLo-Bt-ej4"/>
                     </connections>
                 </viewController>
