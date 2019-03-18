@@ -73,7 +73,10 @@ class ViewController: UIViewController {
     
     // show question in label
     func displayQuestion(){
-        
+        // assign values to random numbers
+        chooseRandomNumbers()
+        // set label question
+        lblQuestionOUTLET.text = String(randomNumber1!) + " + X = " + String(randomNumber2!)
     }
     
     // check answers
