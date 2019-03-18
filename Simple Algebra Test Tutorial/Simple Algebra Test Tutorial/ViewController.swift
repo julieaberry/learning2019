@@ -56,9 +56,19 @@ class ViewController: UIViewController {
     
     // FUNCTIONS
     
-    // random number
+    // random number generators
     func chooseRandomNumbers(){
-        // generate random numbers
+        // choose numbers including only 0 - 10
+        randomNumber1 = Int(arc4random_uniform(10))
+        randomNumber2 = Int(arc4random_uniform(10))
+        // make sure numbers are not the same as the last ones
+        if(randomNumber1 == lastRandomNumber || randomNumber2 == lastRandomNumber) {
+            // if they are then choose random numbers again
+            chooseRandomNumbers()
+            // declare what last random number is
+            lastRandomNumber = randomNumber1
+            
+        }
     }
     
     // show question in label
