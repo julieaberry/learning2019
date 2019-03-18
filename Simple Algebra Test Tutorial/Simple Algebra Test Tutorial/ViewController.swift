@@ -23,6 +23,12 @@ class ViewController: UIViewController {
     
     // GLOBAL VARIABLES
     
+    var randomNumber1 : Int?
+    var randomNumber2 : Int?
+    var inputNumber : Int?
+    var lastRandomNumber : Int?
+    var progress : Int = 0
+    var questionsAttempted : Int = 0
     
     
     // ACTIONS
@@ -49,6 +55,27 @@ class ViewController: UIViewController {
     
     
     // FUNCTIONS
+    
+    // random number
+    func chooseRandomNumbers(){
+        // generate random numbers
+    }
+    
+    // show question in label
+    func displayQuestion(){
+        
+    }
+    
+    // check answers
+    func checkIfCorrect() -> Bool {
+        return false
+    }
+    
+    
+    
+    
+    
+    
     
     // input text
     
