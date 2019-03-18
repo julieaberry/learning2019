@@ -81,22 +81,17 @@ class ViewController: UIViewController {
     
     // check answers
     func checkIfCorrect() -> Bool {
+        // if random1 + user input = random2
+            // or if random2 - random1 = user input
+        if (randomNumber1! + inputNumber! == randomNumber2!) {
+            return true
+        }
         return false
     }
-    
-    
-    
-    
-    
-    
-    
-    // input text
-    
-    // button
+
     
     // progress bar
-    
-    //
+ 
     
     
     
