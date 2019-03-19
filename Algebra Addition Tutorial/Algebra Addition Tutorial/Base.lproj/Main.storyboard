@@ -59,6 +59,9 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="55"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="checkAnswerACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hzg-11-95a"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-su-qVg">
                                         <rect key="frame" x="0.0" y="0.0" width="337.5" height="99.5"/>
@@ -475,6 +478,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="btnCheckAnswerOUTLET" destination="KvH-yH-sRg" id="91P-9H-xag"/>
+                        <outlet property="lblProgressOUTLET" destination="elV-jq-asw" id="c5e-mT-MMd"/>
+                        <outlet property="lblQuestionOUTLET" destination="hNZ-su-qVg" id="C7z-WR-mjz"/>
+                        <outlet property="lblRightOrWrongOUTLET" destination="aZi-JM-Cy1" id="5mE-2o-JFa"/>
+                        <outlet property="lblTitleOUTLET" destination="VtF-K1-oxS" id="81X-9m-1JQ"/>
+                        <outlet property="txtInputOUTLET" destination="Ulg-Kj-bSx" id="8Ai-7j-wUO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
