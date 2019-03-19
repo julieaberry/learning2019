@@ -43,51 +43,34 @@ class ViewController: UIViewController {
             if let _ = Int(txtInputOUTLET.text!) {
                 // assign input number
                 inputNumber = Int(txtInputOUTLET.text!)!
+                // increase number of attempts by 1
+                questionsAttempted += 1
                 // then if answer is correct
                 if (checkIfCorrect() == true) {
+                    // increase progress by 1 ????????/
+                    progress += 1
+                    
+                    
                     // display "correct message to user"
-                    lblRightOrWrongOUTLET.text = "Correct!"
+                    lblRightOrWrongOUTLET.text = "Correct!" + String(progress) + " correct."
                     // increase progress by 1
                     pgvProgressViewOUTLET.progress += 0.1
                     // check if progress bar is at the end (1)
                     if (pgvProgressViewOUTLET.progress == 1) {
                         // change question text
-                        lblQuestionOUTLET.text = "10 points. Keep going?"
-                        
-                        // TODO - change text on button
+                        lblQuestionOUTLET.text = "Keep going?"
                         // TODO - change text on answer display
+                        lblRightOrWrongOUTLET.text = String(questionsAttempted) + "attempts at 10 questions"
+                        // TODO - change text on button
+                        btnCheckOUTLET.setTitle("KEEP GOING", for: UIControl.State.normal)
+                        
                         
                     } else {
                         // if progress bar is not at the end load another question
                         displayQuestion()
+                        btnCheckOUTLET.setTitle("CHECK ANSWER", for: UIControl.State.normal)
                     }
             }
-            
-            //////// move this inside if let statement //////////////////
-            
-//            // assign input number
-//            inputNumber = Int(txtInputOUTLET.text!)!
-//            // then if answer is correct
-//            if (checkIfCorrect() == true) {
-//                // display "correct message to user"
-//                lblRightOrWrongOUTLET.text = "Correct!"
-//                // increase progress by 1
-//                pgvProgressViewOUTLET.progress += 0.1
-//                // check if progress bar is at the end (1)
-//                if (pgvProgressViewOUTLET.progress == 1) {
-//                    // change question text
-//                   lblQuestionOUTLET.text = "10 points. Keep going?"
-//
-//                     // TODO - change text on button
-//                     // TODO - change text on answer display
-//
-//                } else {
-//                    // if progress bar is not at the end load another question
-//                    displayQuestion()
-//                }
-                
-                /////////////////////////////
-            
               // if answer is incorrect
             } else if (checkIfCorrect() == false) {
                 // display "incorrect" message
@@ -107,6 +90,8 @@ class ViewController: UIViewController {
             // set progress back to 0
             pgvProgressViewOUTLET.progress = 0
         }
+        // clear text from input when no longer in use
+        txtInputOUTLET.text?.removeAll()
     }
     
     
