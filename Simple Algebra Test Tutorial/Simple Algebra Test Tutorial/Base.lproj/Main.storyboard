@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,12 +15,12 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simple_Algebra_Test_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number and press the check answer button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-p1-a7i" userLabel="Enter a number">
-                                <rect key="frame" x="20.666666666666657" y="68.000000000000014" width="372.66666666666674" height="134.33333333333337"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="18.666666666666657" y="68" width="337.66666666666674" height="121.66666666666669"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,13 +38,13 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXK-1G-Q7d" userLabel="QA View">
-                                <rect key="frame" x="20.666666666666657" y="220.33333333333331" width="372.66666666666674" height="179.33333333333331"/>
+                                <rect key="frame" x="18.666666666666657" y="207.66666666666669" width="337.66666666666674" height="162.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV7-3r-Ehn">
-                                        <rect key="frame" x="18.666666666666657" y="0.0" width="335.33333333333337" height="89.666666666666671"/>
-                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="17" y="0.0" width="303.66666666666669" height="81.333333333333329"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <variation key="heightClass=compact-widthClass=compact">
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
@@ -53,14 +53,14 @@
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
-                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="38"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="45"/>
                                         </variation>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-0r-9Fz">
-                                        <rect key="frame" x="93.333333333333314" y="98.666666666666657" width="186" height="80.666666666666657"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Answer" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-0r-9Fz">
+                                        <rect key="frame" x="84.333333333333314" y="89.333333333333343" width="169" height="73.333333333333343"/>
                                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
@@ -79,7 +79,7 @@
                                         </variation>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="hV7-3r-Ehn" firstAttribute="leading" secondItem="OXK-1G-Q7d" secondAttribute="leading" id="1po-Fu-WNa"/>
                                     <constraint firstItem="hV7-3r-Ehn" firstAttribute="top" secondItem="OXK-1G-Q7d" secondAttribute="top" id="6kQ-Id-BIG"/>
@@ -278,10 +278,10 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blr-Ar-aoZ" userLabel="Button View">
-                                <rect key="frame" x="20.666666666666657" y="417.66666666666669" width="372.66666666666674" height="89.666666666666686"/>
+                                <rect key="frame" x="18.666666666666657" y="388.33333333333331" width="337.66666666666674" height="81"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekw-XE-KPj">
-                                        <rect key="frame" x="18.666666666666657" y="9" width="335.33333333333337" height="71.666666666666671"/>
+                                        <rect key="frame" x="17" y="8" width="303.66666666666669" height="65"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
                                         <state key="normal" title="CHECK ANSWER">
@@ -294,7 +294,7 @@
                                             <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
-                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="24"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="33"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="48"/>
@@ -304,7 +304,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="ekw-XE-KPj" firstAttribute="width" secondItem="blr-Ar-aoZ" secondAttribute="width" multiplier="0.9" id="7jv-da-u7w"/>
                                     <constraint firstItem="ekw-XE-KPj" firstAttribute="centerY" secondItem="blr-Ar-aoZ" secondAttribute="centerY" id="KH0-bb-ubw"/>
@@ -364,9 +364,9 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct/Incorrect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKY-4K-B7M">
-                                <rect key="frame" x="20.666666666666629" y="525.33333333333337" width="372.66666666666674" height="250"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKY-4K-B7M">
+                                <rect key="frame" x="18.666666666666657" y="487.33333333333326" width="337.66666666666674" height="208"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 <color key="textColor" red="0.074982888996601105" green="0.72738152742385864" blue="0.80284935235977173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -377,24 +377,24 @@
                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F67-3V-X7q" userLabel="Progress View Container">
-                                <rect key="frame" x="20.666666666666657" y="793.33333333333337" width="372.66666666666674" height="44.666666666666629"/>
+                                <rect key="frame" x="18.666666666666657" y="713.33333333333337" width="337.66666666666674" height="40.666666666666629"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="HJr-hn-Jyt">
-                                        <rect key="frame" x="0.0" y="21.333333333333258" width="372.66666666666669" height="2"/>
+                                        <rect key="frame" x="0.0" y="19.333333333333258" width="337.66666666666669" height="2"/>
                                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="progressTintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="trackTintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="HJr-hn-Jyt" firstAttribute="centerY" secondItem="F67-3V-X7q" secondAttribute="centerY" id="dUT-L4-EbK"/>
                                     <constraint firstItem="HJr-hn-Jyt" firstAttribute="width" secondItem="F67-3V-X7q" secondAttribute="width" id="fRM-FF-5zq"/>

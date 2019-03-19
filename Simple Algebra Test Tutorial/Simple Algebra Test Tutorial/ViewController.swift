@@ -49,8 +49,8 @@ class ViewController: UIViewController {
                 // check if progress bar is at the end (1)
                 if (pgvProgressViewOUTLET.progress == 1) {
                     // change question text
-                    lblQuestionOUTLET.text = "Congratulations, you now have 10 points. Keep going?"
-                     
+                   lblQuestionOUTLET.text = "10 points. Keep going?"
+//                    lblRightOrWrongOUTLET.text = "Congratulations, you now have 10 points. Keep going?"
                      // TODO - change text on button
                      // TODO - change text on answer display
  
@@ -63,6 +63,11 @@ class ViewController: UIViewController {
             } else if (checkIfCorrect() == false) {
                 // display "incorrect" message
                 lblRightOrWrongOUTLET.text = "Incorrect, try again"
+                // and load a new question
+                displayQuestion()
+            } else {
+                // display "starter" message
+                lblRightOrWrongOUTLET.text = "Check your answers here"
                 // and load a new question
                 displayQuestion()
             }
@@ -89,7 +94,6 @@ class ViewController: UIViewController {
             chooseRandomNumbers()
             // declare what last random number is
             lastRandomNumber = randomNumber1
-            
         }
     }
     
@@ -98,7 +102,7 @@ class ViewController: UIViewController {
         // assign values to random numbers
         chooseRandomNumbers()
         // set label question
-        lblQuestionOUTLET.text = String(randomNumber1!) + " + X = " + String(randomNumber2!)
+        lblQuestionOUTLET.text = String(randomNumber1!) + " + x = " + String(randomNumber2!)
     }
     
     // check answers
@@ -112,15 +116,15 @@ class ViewController: UIViewController {
     }
 
     
-    
     // OVERRIDES
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // display the first questions as soon as the app loads
         displayQuestion()
+        // display "starter" message
+        lblRightOrWrongOUTLET.text = "Check your answer"
     }
-
 
 }
 
