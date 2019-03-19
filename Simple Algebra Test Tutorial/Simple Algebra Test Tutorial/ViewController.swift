@@ -6,6 +6,11 @@
 //  Copyright © 2019 Julie Berry. All rights reserved.
 //
 
+
+// TODO: improve UI
+// TODO: simple code cleanup
+
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -59,9 +64,9 @@ class ViewController: UIViewController {
                     if (pgvProgressViewOUTLET.progress == 1) {
                         // change question text
                         lblQuestionOUTLET.text = "Keep going?"
-                        // TODO - change text on answer display
+                        // TODO: - change text on answer display
                         lblRightOrWrongOUTLET.text = String(questionsAttempted) + "attempts at 10 questions"
-                        // TODO - change text on button
+                        // TODO: - change text on button
                         btnCheckOUTLET.setTitle("KEEP GOING", for: UIControl.State.normal)
                         
                         
