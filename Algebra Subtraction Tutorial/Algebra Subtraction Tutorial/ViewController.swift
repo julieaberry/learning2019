@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // add basic functionality
     
     // OUTLETS
     
@@ -34,11 +35,24 @@ class ViewController: UIViewController {
     
     
     // ACTIONS
-    
+    // what happens when the Check Answer button is touched
     @IBAction func checkAnswerACTION(_ sender: UIButton) {
+        // make sure user input is not empty
+        if let _ = Int(txtInput.text!) {
+            // make sure user input is an Int
+            userAnswer = Int(txtInput.text!)!
+            // then check if the answer is correct
+            checkIfCorrect()
+        }
+        // either way this will happen
+        chooseQuestionNumbers(difficultLevel: difficulty)
+        // change progress label text
+        lblProgress.text = String(progress) + "/5   -  " + String(difficulty)
+        // clear text input
+        txtInput.text?.removeAll()
         
     }
-    
+    // what happens when the no button is touched
     @IBAction func chooseNoACTION(_ sender: UIButton) {
         
     }
@@ -143,7 +157,28 @@ class ViewController: UIViewController {
     
     // define what is correct or incorrect
     func checkIfCorrect() {
-        
+        // first check for an input number
+        if (userAnswer == correctAnswer) {
+            // then answer is correct so:
+                // advance progress by 1
+            progress += 1
+                // change right or wrong text
+            lblRightOrWrong.text = "CORRECT"
+                // change label bg color to green
+            lblRightOrWrong.backgroundColor = UIColor.green
+            // what happens when user gets 5 correct answers
+//            if (progress == 5) {
+//                // option increase difficulty - implement button
+//
+//            }
+            
+        } else {
+            // then answer is correct so:
+                // change right or wrong text
+            lblRightOrWrong.text = "INCORRECT"
+                // change label bg color to green
+            lblRightOrWrong.backgroundColor = UIColor.red
+        }
     }
     
     
