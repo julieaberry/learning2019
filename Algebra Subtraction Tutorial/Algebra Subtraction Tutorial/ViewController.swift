@@ -24,8 +24,13 @@ class ViewController: UIViewController {
     
     // GLOBAL VARIABLES
     
-    
-    
+    var randomNumber1 : Int?
+    var randomNumber2 : Int?
+    var lastRandomNumber : Int?
+    var userAnswer : Int?
+    var correctAnswer : Int?
+    var progress : Int = 0
+    var difficulty : String = "easy"
     
     
     // ACTIONS
@@ -39,6 +44,23 @@ class ViewController: UIViewController {
     }
     
     // FUNCTIONS
+    
+    // x - rn1 = rn2
+    // rn1 - x = rn2
+    // random number generators
+    func setUpQuestion(){
+        
+    }
+    
+    // get a seaparate set of numbers based on difficulty level
+    func chooseQuestionNumbers(difficultLevel : String) {
+        
+    }
+    
+    // define what is correct or incorrect
+    func checkIfCorrect() {
+        
+    }
     
     
     
