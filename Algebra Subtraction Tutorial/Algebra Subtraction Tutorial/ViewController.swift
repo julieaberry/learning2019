@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         // change progress label text
         lblProgress.text = String(progress) + "/5   -  " + String(difficulty)
         // clear text input
-        txtInput.text?.removeAll()
+        txtInput.text?.removeAll() 
         
     }
     // what happens when the no button is touched
