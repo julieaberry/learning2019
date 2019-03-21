@@ -61,7 +61,7 @@
                                         </variation>
                                         <connections>
                                             <action selector="checkAnswerACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hzg-11-95a"/>
-                                            <action selector="chooseNoACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jWB-wz-u50"/>
+                                            <action selector="chooseNoACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5r-Fh-9An"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-su-qVg">
@@ -106,7 +106,7 @@
                                         <rect key="frame" x="0.0" y="206.00000000000003" width="372.66666666666669" height="72.666666666666657"/>
                                         <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="33"/>
-                                        <state key="normal" title="YES">
+                                        <state key="normal">
                                             <color key="titleColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -166,11 +166,11 @@
                                         <include reference="eVR-Oq-KCt"/>
                                         <include reference="eWa-Cg-UR4"/>
                                         <include reference="rAe-hE-rLk"/>
+                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="4I4-CP-6eI"/>
                                         <include reference="INF-ga-P0E"/>
                                         <include reference="W4O-H2-tzU"/>
                                         <include reference="wVD-60-69V"/>
-                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="5i7-9h-n9T"/>
                                         <include reference="bkr-B6-wfV"/>
                                         <include reference="bss-K4-lJn"/>
@@ -185,11 +185,11 @@
                                         <include reference="eVR-Oq-KCt"/>
                                         <include reference="eWa-Cg-UR4"/>
                                         <include reference="rAe-hE-rLk"/>
+                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="4I4-CP-6eI"/>
                                         <include reference="INF-ga-P0E"/>
                                         <include reference="W4O-H2-tzU"/>
                                         <include reference="wVD-60-69V"/>
-                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="5i7-9h-n9T"/>
                                         <include reference="bkr-B6-wfV"/>
                                         <include reference="bss-K4-lJn"/>
@@ -204,11 +204,11 @@
                                         <include reference="eVR-Oq-KCt"/>
                                         <include reference="eWa-Cg-UR4"/>
                                         <include reference="rAe-hE-rLk"/>
+                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="4I4-CP-6eI"/>
                                         <include reference="INF-ga-P0E"/>
                                         <include reference="W4O-H2-tzU"/>
                                         <include reference="wVD-60-69V"/>
-                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="5i7-9h-n9T"/>
                                         <include reference="bkr-B6-wfV"/>
                                         <include reference="bss-K4-lJn"/>
@@ -223,11 +223,11 @@
                                         <include reference="eVR-Oq-KCt"/>
                                         <include reference="eWa-Cg-UR4"/>
                                         <include reference="rAe-hE-rLk"/>
+                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="4I4-CP-6eI"/>
                                         <include reference="INF-ga-P0E"/>
                                         <include reference="W4O-H2-tzU"/>
                                         <include reference="wVD-60-69V"/>
-                                        <include reference="wZp-4b-DgP"/>
                                         <include reference="5i7-9h-n9T"/>
                                         <include reference="bkr-B6-wfV"/>
                                         <include reference="bss-K4-lJn"/>
@@ -512,18 +512,12 @@
                     </view>
                     <connections>
                         <outlet property="btnCheckAnswer" destination="bAu-Gb-T7d" id="9E5-m0-3oE"/>
-                        <outlet property="btnCheckAnswerOUTLET" destination="KvH-yH-sRg" id="91P-9H-xag"/>
                         <outlet property="btnNo" destination="KvH-yH-sRg" id="19t-U4-VdD"/>
                         <outlet property="lblProgress" destination="elV-jq-asw" id="00N-eo-r8X"/>
-                        <outlet property="lblProgressOUTLET" destination="elV-jq-asw" id="c5e-mT-MMd"/>
                         <outlet property="lblQuestion" destination="hNZ-su-qVg" id="iTo-fX-SZe"/>
-                        <outlet property="lblQuestionOUTLET" destination="hNZ-su-qVg" id="C7z-WR-mjz"/>
                         <outlet property="lblRightOrWrong" destination="aZi-JM-Cy1" id="dZW-dl-BXe"/>
-                        <outlet property="lblRightOrWrongOUTLET" destination="aZi-JM-Cy1" id="5mE-2o-JFa"/>
                         <outlet property="lblTitle" destination="VtF-K1-oxS" id="dmU-qs-YnE"/>
-                        <outlet property="lblTitleOUTLET" destination="VtF-K1-oxS" id="81X-9m-1JQ"/>
                         <outlet property="txtInput" destination="Ulg-Kj-bSx" id="TjE-T1-Rtt"/>
-                        <outlet property="txtInputOUTLET" destination="Ulg-Kj-bSx" id="8Ai-7j-wUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
