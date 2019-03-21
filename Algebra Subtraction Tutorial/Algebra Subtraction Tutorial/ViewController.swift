@@ -7,6 +7,10 @@
 //
 
 
+// TODO: this app advances the difficulty level when no button is touched  //FIXIT!
+// TODO: the UI can be improved by movin elements so the user is filling in a blank
+
+
 import UIKit
 
 class ViewController: UIViewController {
