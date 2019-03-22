@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AE79DB422432B37004535F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE79DB322432B37004535F5 /* AppDelegate.swift */; };
+		7AE79DB622432B37004535F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE79DB522432B37004535F5 /* ViewController.swift */; };
+		7AE79DB922432B37004535F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE79DB722432B37004535F5 /* Main.storyboard */; };
+		7AE79DBB22432B37004535F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE79DBA22432B37004535F5 /* Assets.xcassets */; };
+		7AE79DBE22432B37004535F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE79DBC22432B37004535F5 /* LaunchScreen.storyboard */; };
+		7AE79DC922432B37004535F5 /* Algebra_Multiplication_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE79DC822432B37004535F5 /* Algebra_Multiplication_TutorialTests.swift */; };
+		7AE79DD422432B37004535F5 /* Algebra_Multiplication_TutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE79DD322432B37004535F5 /* Algebra_Multiplication_TutorialUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AE79DC522432B37004535F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE79DA822432B36004535F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE79DAF22432B36004535F5;
+			remoteInfo = "Algebra Multiplication Tutorial";
+		};
+		7AE79DD022432B37004535F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE79DA822432B36004535F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE79DAF22432B36004535F5;
+			remoteInfo = "Algebra Multiplication Tutorial";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AE79DB022432B36004535F5 /* Algebra Multiplication Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algebra Multiplication Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE79DB322432B37004535F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AE79DB522432B37004535F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AE79DB822432B37004535F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AE79DBA22432B37004535F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AE79DBD22432B37004535F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AE79DBF22432B37004535F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE79DC422432B37004535F5 /* Algebra Multiplication TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algebra Multiplication TutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE79DC822432B37004535F5 /* Algebra_Multiplication_TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algebra_Multiplication_TutorialTests.swift; sourceTree = "<group>"; };
+		7AE79DCA22432B37004535F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE79DCF22432B37004535F5 /* Algebra Multiplication TutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algebra Multiplication TutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE79DD322432B37004535F5 /* Algebra_Multiplication_TutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algebra_Multiplication_TutorialUITests.swift; sourceTree = "<group>"; };
+		7AE79DD522432B37004535F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AE79DAD22432B36004535F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE79DC122432B37004535F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE79DCC22432B37004535F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AE79DA722432B36004535F5 = {
+			isa = PBXGroup;
+			children = (
+				7AE79DB222432B36004535F5 /* Algebra Multiplication Tutorial */,
+				7AE79DC722432B37004535F5 /* Algebra Multiplication TutorialTests */,
+				7AE79DD222432B37004535F5 /* Algebra Multiplication TutorialUITests */,
+				7AE79DB122432B36004535F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AE79DB122432B36004535F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE79DB022432B36004535F5 /* Algebra Multiplication Tutorial.app */,
+				7AE79DC422432B37004535F5 /* Algebra Multiplication TutorialTests.xctest */,
+				7AE79DCF22432B37004535F5 /* Algebra Multiplication TutorialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE79DB222432B36004535F5 /* Algebra Multiplication Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				7AE79DB322432B37004535F5 /* AppDelegate.swift */,
+				7AE79DB522432B37004535F5 /* ViewController.swift */,
+				7AE79DB722432B37004535F5 /* Main.storyboard */,
+				7AE79DBA22432B37004535F5 /* Assets.xcassets */,
+				7AE79DBC22432B37004535F5 /* LaunchScreen.storyboard */,
+				7AE79DBF22432B37004535F5 /* Info.plist */,
+			);
+			path = "Algebra Multiplication Tutorial";
+			sourceTree = "<group>";
+		};
+		7AE79DC722432B37004535F5 /* Algebra Multiplication TutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AE79DC822432B37004535F5 /* Algebra_Multiplication_TutorialTests.swift */,
+				7AE79DCA22432B37004535F5 /* Info.plist */,
+			);
+			path = "Algebra Multiplication TutorialTests";
+			sourceTree = "<group>";
+		};
+		7AE79DD222432B37004535F5 /* Algebra Multiplication TutorialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7AE79DD322432B37004535F5 /* Algebra_Multiplication_TutorialUITests.swift */,
+				7AE79DD522432B37004535F5 /* Info.plist */,
+			);
+			path = "Algebra Multiplication TutorialUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AE79DAF22432B36004535F5 /* Algebra Multiplication Tutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE79DD822432B37004535F5 /* Build configuration list for PBXNativeTarget "Algebra Multiplication Tutorial" */;
+			buildPhases = (
+				7AE79DAC22432B36004535F5 /* Sources */,
+				7AE79DAD22432B36004535F5 /* Frameworks */,
+				7AE79DAE22432B36004535F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Algebra Multiplication Tutorial";
+			productName = "Algebra Multiplication Tutorial";
+			productReference = 7AE79DB022432B36004535F5 /* Algebra Multiplication Tutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AE79DC322432B37004535F5 /* Algebra Multiplication TutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE79DDB22432B37004535F5 /* Build configuration list for PBXNativeTarget "Algebra Multiplication TutorialTests" */;
+			buildPhases = (
+				7AE79DC022432B37004535F5 /* Sources */,
+				7AE79DC122432B37004535F5 /* Frameworks */,
+				7AE79DC222432B37004535F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE79DC622432B37004535F5 /* PBXTargetDependency */,
+			);
+			name = "Algebra Multiplication TutorialTests";
+			productName = "Algebra Multiplication TutorialTests";
+			productReference = 7AE79DC422432B37004535F5 /* Algebra Multiplication TutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7AE79DCE22432B37004535F5 /* Algebra Multiplication TutorialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE79DDE22432B37004535F5 /* Build configuration list for PBXNativeTarget "Algebra Multiplication TutorialUITests" */;
+			buildPhases = (
+				7AE79DCB22432B37004535F5 /* Sources */,
+				7AE79DCC22432B37004535F5 /* Frameworks */,
+				7AE79DCD22432B37004535F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE79DD122432B37004535F5 /* PBXTargetDependency */,
+			);
+			name = "Algebra Multiplication TutorialUITests";
+			productName = "Algebra Multiplication TutorialUITests";
+			productReference = 7AE79DCF22432B37004535F5 /* Algebra Multiplication TutorialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AE79DA822432B36004535F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Julie Berry";
+				TargetAttributes = {
+					7AE79DAF22432B36004535F5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7AE79DC322432B37004535F5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7AE79DAF22432B36004535F5;
+					};
+					7AE79DCE22432B37004535F5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7AE79DAF22432B36004535F5;
+					};
+				};
+			};
+			buildConfigurationList = 7AE79DAB22432B36004535F5 /* Build configuration list for PBXProject "Algebra Multiplication Tutorial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AE79DA722432B36004535F5;
+			productRefGroup = 7AE79DB122432B36004535F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AE79DAF22432B36004535F5 /* Algebra Multiplication Tutorial */,
+				7AE79DC322432B37004535F5 /* Algebra Multiplication TutorialTests */,
+				7AE79DCE22432B37004535F5 /* Algebra Multiplication TutorialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AE79DAE22432B36004535F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE79DBE22432B37004535F5 /* LaunchScreen.storyboard in Resources */,
+				7AE79DBB22432B37004535F5 /* Assets.xcassets in Resources */,
+				7AE79DB922432B37004535F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE79DC222432B37004535F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE79DCD22432B37004535F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AE79DAC22432B36004535F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE79DB622432B37004535F5 /* ViewController.swift in Sources */,
+				7AE79DB422432B37004535F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE79DC022432B37004535F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE79DC922432B37004535F5 /* Algebra_Multiplication_TutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE79DCB22432B37004535F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE79DD422432B37004535F5 /* Algebra_Multiplication_TutorialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AE79DC622432B37004535F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AE79DAF22432B36004535F5 /* Algebra Multiplication Tutorial */;
+			targetProxy = 7AE79DC522432B37004535F5 /* PBXContainerItemProxy */;
+		};
+		7AE79DD122432B37004535F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AE79DAF22432B36004535F5 /* Algebra Multiplication Tutorial */;
+			targetProxy = 7AE79DD022432B37004535F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AE79DB722432B37004535F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE79DB822432B37004535F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE79DBC22432B37004535F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE79DBD22432B37004535F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AE79DD622432B37004535F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AE79DD722432B37004535F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AE79DD922432B37004535F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "Algebra Multiplication Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.Algebra-Multiplication-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AE79DDA22432B37004535F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "Algebra Multiplication Tutorial/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.Algebra-Multiplication-Tutorial";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7AE79DDC22432B37004535F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "Algebra Multiplication TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.Algebra-Multiplication-TutorialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algebra Multiplication Tutorial.app/Algebra Multiplication Tutorial";
+			};
+			name = Debug;
+		};
+		7AE79DDD22432B37004535F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "Algebra Multiplication TutorialTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.Algebra-Multiplication-TutorialTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algebra Multiplication Tutorial.app/Algebra Multiplication Tutorial";
+			};
+			name = Release;
+		};
+		7AE79DDF22432B37004535F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "Algebra Multiplication TutorialUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.Algebra-Multiplication-TutorialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Algebra Multiplication Tutorial";
+			};
+			name = Debug;
+		};
+		7AE79DE022432B37004535F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36H4X297UC;
+				INFOPLIST_FILE = "Algebra Multiplication TutorialUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jberry-.Algebra-Multiplication-TutorialUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Algebra Multiplication Tutorial";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AE79DAB22432B36004535F5 /* Build configuration list for PBXProject "Algebra Multiplication Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE79DD622432B37004535F5 /* Debug */,
+				7AE79DD722432B37004535F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE79DD822432B37004535F5 /* Build configuration list for PBXNativeTarget "Algebra Multiplication Tutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE79DD922432B37004535F5 /* Debug */,
+				7AE79DDA22432B37004535F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE79DDB22432B37004535F5 /* Build configuration list for PBXNativeTarget "Algebra Multiplication TutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE79DDC22432B37004535F5 /* Debug */,
+				7AE79DDD22432B37004535F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE79DDE22432B37004535F5 /* Build configuration list for PBXNativeTarget "Algebra Multiplication TutorialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE79DDF22432B37004535F5 /* Debug */,
+				7AE79DE022432B37004535F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AE79DA822432B36004535F5 /* Project object */;
+}
