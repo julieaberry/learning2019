@@ -30,6 +30,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7BE-Zt-cnh">
                                         <rect key="frame" x="14" y="18.5" width="101" height="31"/>
+                                        <connections>
+                                            <action selector="turnSwitchOnOrOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="zoo-BX-coo"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79863975259999997" green="0.64098133609999997" blue="0.357830284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -113,6 +116,9 @@
                                                 <variation key="heightClass=compact-widthClass=compact">
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
                                                 </variation>
+                                                <connections>
+                                                    <action selector="pressCheckAnswerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qom-ri-E3q"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is x?" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpF-OH-z6t">
                                                 <rect key="frame" x="14" y="84" width="145.5" height="33"/>
@@ -410,6 +416,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnCheckAnswerButton" destination="pQZ-LH-Alb" id="rcu-8B-JoQ"/>
+                        <outlet property="lblIsCorrectLabel" destination="21g-tu-aZ0" id="mim-IU-CPo"/>
+                        <outlet property="lblQuestionLabel" destination="cbW-aW-zcR" id="VeB-ke-VnD"/>
+                        <outlet property="lblSwitchLabel" destination="3ZI-QV-S4X" id="t9L-dI-7c6"/>
+                        <outlet property="pgvProgressView" destination="4Ua-lY-nLt" id="Rqh-nc-Xnk"/>
+                        <outlet property="swcNegativeSwitch" destination="7BE-Zt-cnh" id="et7-q8-iXR"/>
+                        <outlet property="txtInputText" destination="zWY-Ne-PGR" id="9t4-E7-g29"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
