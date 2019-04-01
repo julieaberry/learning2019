@@ -14,14 +14,10 @@ class ViewController: UIViewController {
      
      SWITCH begins in off position
      
-     App displays a question, takes in a response, calculates the response anse informs the usei of right or wrong anser/
+     App displays a question, takes in a response, calculates the response and informs the usei of right or wrong anser/
      
      App keeps track of responses using a progress view.
      When progress is full, difficulty level is increased up to 3 levels
-     
-     
-     
-     
      
  */
     
@@ -39,15 +35,23 @@ class ViewController: UIViewController {
     
     // GLOBAL VARIABLES
     
+    var randomNumber : Int?
+    var lastRandomNumber : Int?
+    var correctAnswer : Int?
+    var userAnswer : Int?
+    var progress : Float = 0
+    var multiplier : Int = 1
+    var includeNegatives : Bool = false
     
     
     // ACTIONS
     
-    
+    //
     @IBAction func pressCheckAnswerButton(_ sender: UIButton) {
         
     }
     
+    //
      @IBAction func turnSwitchOnOrOff(_ sender: UISwitch) {
         
     }
@@ -56,13 +60,26 @@ class ViewController: UIViewController {
     
     // FUNCTIONS
     
+    // multiplier * x = randomNumber
+        // random number generators
+    func chooseQuestionNumbers(){
+    }
+    
+        // what to do if answer is correct or incorrect
+    func checkIfCorrect(){
+        
+    }
+    
+    
+
     
     
     // OVERRIDES
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Open UI with a question
+         chooseQuestionNumbers()
     }
 
 
